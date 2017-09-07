@@ -60,3 +60,6 @@ typings/
 # local configuration file
 config/config.js
 
+# vscode local configuration
+.vscode
+

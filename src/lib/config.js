@@ -2,10 +2,10 @@
 
 /* eslint-disable global-require */
 
-const Dist = require('../config.dist')
+const Dist = require('../../config.dist')
 let Local = {}
 try {
-    Local = require('../config')
+    Local = require('../../config')
 } catch (err) {
     Local = {}
 }

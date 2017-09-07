@@ -25,4 +25,11 @@ module.exports = {
             console.log(`[${Chalk.white('test')}] ${str}`)
         }
     },
+    raw(str, color = null) {
+        const cstr = color ? Chalk[color](str) : str
+        console.log(cstr)
+    },
+    nl() {
+        console.log('')
+    },
 }

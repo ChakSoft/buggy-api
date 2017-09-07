@@ -14,21 +14,24 @@ const Compression = require('compression')
 const BodyParser = require('body-parser')
 const CookieParser = require('cookie-parser')
 
-const Logger = require('./lib/logger')
-const Config = require('./lib/config')
+const Logger = require('../lib/logger')
+const Config = require('../lib/config')
 
-app
-    .use(Compression())
-    .use(BodyParser.json({ extended : true }))
-    .use(CookieParser())
-    
-if (!module.parent) {
+const start = () => {
     app.listen(Config.port, () => {
         Logger.info(`Listening on port ${Config.port}`)
     })
 }
 
+app
+    .use(Compression())
+    .use(BodyParser.json({ extended : true }))
+    .use(CookieParser())
+
 /**
  * Exports the app to allow tests with Chai and Mocha
  */
-module.exports = app
+module.exports = {
+    app,
+    start,
+}
