@@ -2,6 +2,14 @@
 
 module.exports = {
     properties : {
+        engine : {
+            description : 'Engine',
+            default : 'mysql',
+            required : true,
+            type : 'string',
+            conform : (value) => ['mysql', 'postgres'].includes(value),
+            message : 'Engine could only be `mysql` or `postgres`',
+        },
         host : {
             description : 'Host',
             default : '127.0.0.1',

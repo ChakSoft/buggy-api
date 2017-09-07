@@ -11,7 +11,11 @@
         "type": "git",
         "url": "git+https://github.com/ChakSoft/buggy-api.git"
     },
-    "keywords": ["bugtracker", "bug", "tracker"],
+    "keywords": [
+        "bugtracker",
+        "bug",
+        "tracker"
+    ],
     "author": "Michael Chacaton <chako256@gmail.com>",
     "license": "GPL-3.0",
     "bugs": {
@@ -37,6 +41,10 @@
         "compression": "^1.7.0",
         "cookie-parser": "^1.4.3",
         "express": "^4.15.4",
+        "knex": "^0.13.0",
+        "mysql": "^2.14.1",
+        "objection": "^0.8.9",
+        "pg": "^7.3.0",
         "prompt": "^1.0.0"
     },
     "prettier": {

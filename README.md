@@ -58,6 +58,7 @@ $ npm start setup # or yarn setup if you prefer
 ..:: Buggy API Setup ::..
 
 1. Database configuration
+Engine [mysql] >
 Host [127.0.0.1] >
 Port [3306] >
 User [buggy] >
