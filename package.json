@@ -5,17 +5,15 @@
     "main": "server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "setup": "node main.js --setup"
+        "setup": "node main.js --setup",
+        "start": "pm2 start main.js --name \"Buggy API\"",
+        "start:dev": "node main.js"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ChakSoft/buggy-api.git"
     },
-    "keywords": [
-        "bugtracker",
-        "bug",
-        "tracker"
-    ],
+    "keywords": ["bugtracker", "bug", "tracker"],
     "author": "Michael Chacaton <chako256@gmail.com>",
     "license": "GPL-3.0",
     "bugs": {

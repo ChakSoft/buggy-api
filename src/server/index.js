@@ -15,11 +15,11 @@ const BodyParser = require('body-parser')
 const CookieParser = require('cookie-parser')
 
 const Logger = require('../lib/logger')
-const Config = require('../lib/config')
+const { api } = require('../lib/config')
 
 const start = () => {
-    app.listen(Config.port, () => {
-        Logger.info(`Listening on port ${Config.port}`)
+    app.listen(api.port, () => {
+        Logger.info(`Listening on port ${api.port}`)
     })
 }
 
